@@ -548,6 +548,192 @@
     .pc-hdr-judge-info { padding: 8px 10px; }
     .pc-hdr-judge-credit { font-size: 9px; }
   }
+
+  /* =====================================================
+     BODY SECTIONS - 768px and below
+  ===================================================== */
+  @media (max-width: 768px) {
+
+    /* Nav */
+    .pc-nav {
+      gap: 1rem;
+      height: auto;
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .pc-nav a, .pc-nav-link {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.25rem;
+    }
+
+    /* Hero section */
+    .pc-hero {
+      padding: 2.5rem 1.25rem 2rem;
+    }
+    .pc-hero-title {
+      font-size: clamp(2.8rem, 14vw, 5rem);
+    }
+    .pc-hero-sub {
+      font-size: 0.95rem;
+    }
+    .pc-btn-group {
+      flex-direction: column;
+      align-items: center;
+    }
+    .pc-btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+    .pc-countdown-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .pc-countdown-block {
+      padding: 0.75rem 1rem;
+      min-width: 60px;
+    }
+    .pc-countdown-num { font-size: 2rem; }
+
+    /* Pull quote */
+    .pc-quote-text {
+      font-size: clamp(1.2rem, 4.5vw, 2rem);
+    }
+
+    /* Section titles */
+    .pc-section-title {
+      font-size: clamp(1.8rem, 6vw, 2.8rem);
+    }
+
+    /* How it works steps */
+    .pc-steps {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Prizes */
+    .pc-prize-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Sponsor logos */
+    .pc-sponsors-row {
+      gap: 1rem 1.5rem;
+    }
+    .pc-sponsor-logo {
+      height: 28px;
+    }
+
+    /* Judging criteria */
+    .pc-criteria-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Judges grid */
+    .pc-judges-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .pc-judge-card {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem;
+    }
+    .pc-judge-avatar {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    .pc-judge-name { font-size: 1.1rem; }
+
+    /* Submit / entry section */
+    .pc-submit-inner {
+      padding: 0 1rem;
+    }
+    .pc-submit-timeline {
+      margin: 1.5rem 0 2rem;
+    }
+    .pc-submit-step {
+      padding: 1rem;
+      gap: 1rem;
+    }
+    .pc-submit-step-num {
+      font-size: 1.6rem;
+      width: 28px;
+    }
+    .pc-submit-step-body h4 { font-size: 1rem; }
+    .pc-submit-step-body p { font-size: 0.85rem; }
+
+    /* App download band */
+    .pc-app-band {
+      padding: 2rem 1.25rem;
+    }
+    .pc-app-band h2 {
+      font-size: clamp(1.5rem, 6vw, 2.2rem);
+    }
+    .pc-app-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .pc-app-btn {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+
+    /* Sections inner padding */
+    .pc-section {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    .pc-prizes-bg,
+    .pc-judges-bg,
+    .pc-submit-bg {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    /* Footer */
+    .pc-footer-links {
+      gap: 0.75rem 1.5rem;
+    }
+    .pc-footer-links a {
+      font-size: 0.85rem;
+    }
+    .pc-footer-support,
+    .pc-footer-copy {
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    /* Header sponsor strip */
+    .pc-hdr-sponsor-strip {
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 8px 12px;
+    }
+    .pc-hdr-sponsor-logos {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pc-hdr-sponsor-logos img {
+      height: 16px;
+    }
+
+    /* CTA banner */
+    .pc-hdr-cta-banner {
+      font-size: 0.8rem;
+      padding: 8px 1rem;
+      letter-spacing: 0.08em;
+    }
+  }
     opacity: 0.6;
     border: 2px dashed rgba(245,121,10,0.35);
     padding: 2rem 3rem;
