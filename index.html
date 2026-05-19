@@ -1,10 +1,8 @@
 <!-- ============================================================
-     THE POCKET CHALLENGE &mdash; Shopify Landing Page (Taste Theme)
-     Paste this into a Custom Page template in the Taste theme.
-     Font import and <style> block go inside the page HTML editor
-     (Taste allows custom HTML in page content via a rich text block
-     or a custom page template &mdash; use the latter for full control).
+     THE POCKET CHALLENGE — Custom HTML Landing Page
      ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1408,7 +1406,7 @@
   }
   .pc-hdr-btn {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-size: 1rem;
     letter-spacing: 0.14em;
     padding: 0.7rem 1.5rem;
     border-radius: 3px;
@@ -1435,10 +1433,16 @@
     .pc-hdr-cta-btns {
       justify-content: center;
       margin-top: 1.25rem;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
     .pc-hdr-btn {
-      font-size: 0.9rem;
-      padding: 0.65rem 1.25rem;
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      width: 100%;
+      max-width: 280px;
+      text-align: center;
     }
   }
 
