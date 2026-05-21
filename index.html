@@ -1,66 +1,10 @@
-<!-- Google Tag Manager -->
-<script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TVBNSNM');
-</script>
-<!-- End Google Tag Manager -->
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win $10k+ In Prizes - The Pocket Challenge</title>
-<link rel="icon" type="image/png" href="https://yurtrock.com/cdn/shop/files/ico.png?crop=center&height=32&v=1671746902&width=32">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Win $10k+ In Prizes - The Pocket Challenge">
-<meta property="og:description" content="Play along to Wheelhouse Beats and show us your groove. Win over $10,000 in prizes including guitars, backpacks, software, and a private lesson with Charlie Hunter.">
-<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/OpenGraph.jpg?v=1779319045">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://contest.yurtrock.com">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Yurt Rock">
-
-<!-- Twitter/X Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Win $10k+ In Prizes - The Pocket Challenge">
-<meta name="twitter:description" content="Play along to Wheelhouse Beats and show us your groove. Win over $10,000 in prizes including guitars, backpacks, software, and a private lesson with Charlie Hunter.">
-<meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/OpenGraph.jpg?v=1779319045">
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '407610557188820');
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=407610557188820&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- X (Twitter) Pixel Base Code -->
-<script>
-!function(e,t,n,s,u,a){
-  e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,
-  u.src='https://static.ads-twitter.com/uwt.js',
-  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
-}(window,document,'script');
-twq('config','o5z2k');
-</script>
-<!-- End X (Twitter) Pixel Base Code -->
+<!-- ============================================================
+     THE POCKET CHALLENGE &mdash; Shopify Landing Page (Taste Theme)
+     Paste this into a Custom Page template in the Taste theme.
+     Font import and <style> block go inside the page HTML editor
+     (Taste allows custom HTML in page content via a rich text block
+     or a custom page template &mdash; use the latter for full control).
+     ============================================================ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,11 +41,6 @@ twq('config','o5z2k');
     margin: 0 !important;
     padding: 0 !important;
     background: #0A0805 !important;
-  }
-
-  /* Offset all native anchor jumps by fixed nav + any Shopify theme header height */
-  html {
-    scroll-padding-top: 60px;
   }
 
   /* Remove any gap before the breakout wrapper */
@@ -551,7 +490,7 @@ twq('config','o5z2k');
       min-height: 300px;
     }
 
-    /* Judges: 2x2 grid on mobile */
+    /* Judges: 2&times;2 grid on mobile */
     .pc-hdr-judge-strip {
       height: auto;
       flex-direction: column;
@@ -572,38 +511,18 @@ twq('config','o5z2k');
       overflow: visible;
     }
 
-    /* Switch each judge item to vertical stack */
     .pc-hdr-judge-item {
       flex: unset;
-      flex-direction: column;
       border-right: 1px solid rgba(255,255,255,0.05);
       border-bottom: 1px solid rgba(255,255,255,0.05);
-      overflow: hidden;
     }
 
     .pc-hdr-judge-item:nth-child(2n) { border-right: none; }
     .pc-hdr-judge-item:nth-child(3),
     .pc-hdr-judge-item:nth-child(4) { border-bottom: none; }
 
-    /* Photo fills full card width at fixed height */
-    .pc-hdr-judge-photo {
-      width: 100%;
-      height: 140px;
-      flex-shrink: 0;
-    }
-
-    .pc-hdr-judge-photo img {
-      object-position: center top;
-    }
-
-    /* Info sits below photo */
-    .pc-hdr-judge-info {
-      padding: 10px 12px;
-      flex: 1;
-    }
-
-    .pc-hdr-judge-instrument { font-size: 9px; }
-    .pc-hdr-judge-name { font-size: 15px; white-space: normal; margin-bottom: 6px; }
+    .pc-hdr-judge-photo { width: 70px; }
+    .pc-hdr-judge-name { font-size: 16px; white-space: normal; }
     .pc-hdr-judge-credit { font-size: 10px; white-space: normal; }
 
     /* Footer stacks */
@@ -624,8 +543,8 @@ twq('config','o5z2k');
 
     .pc-hdr-prize-amount { font-size: 1.6rem; }
     .pc-hdr-right { min-height: 260px; }
-    .pc-hdr-judge-photo { width: 100%; height: 120px; }
-    .pc-hdr-judge-name { font-size: 13px; }
+    .pc-hdr-judge-photo { width: 56px; }
+    .pc-hdr-judge-name { font-size: 14px; }
     .pc-hdr-judge-info { padding: 8px 10px; }
     .pc-hdr-judge-credit { font-size: 9px; }
   }
@@ -1484,7 +1403,7 @@ twq('config','o5z2k');
   }
   .pc-hdr-btn {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
     letter-spacing: 0.14em;
     padding: 0.7rem 1.5rem;
     border-radius: 3px;
@@ -1511,16 +1430,10 @@ twq('config','o5z2k');
     .pc-hdr-cta-btns {
       justify-content: center;
       margin-top: 1.25rem;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
     }
     .pc-hdr-btn {
-      font-size: 1rem;
-      padding: 0.75rem 1.5rem;
-      width: 100%;
-      max-width: 280px;
-      text-align: center;
+      font-size: 0.9rem;
+      padding: 0.65rem 1.25rem;
     }
   }
 
@@ -1591,7 +1504,7 @@ twq('config','o5z2k');
         <p class="pc-hdr-hashtag">#pocketchallenge</p>
         <div class="pc-hdr-cta-btns">
           <a href="#pc-enter" class="pc-hdr-btn pc-hdr-btn-primary">Enter The Challenge</a>
-          <a href="https://get.wheelhousebeats.app/yurt_contest" target="_blank" class="pc-hdr-btn pc-hdr-btn-secondary">Download The App</a>
+          <a href="https://get.wheelhousebeats.app/yurt1" target="_blank" class="pc-hdr-btn pc-hdr-btn-secondary">Download The App</a>
         </div>
       </div>
 
@@ -1614,7 +1527,7 @@ twq('config','o5z2k');
         </div>
         <!-- Prizes image -->
         <img class="pc-hdr-prizes-img"
-             src="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/Pocket_Prizes.jpg?v=1779309592"
+             src="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/Prizes.png?v=1779123730"
              alt="Contest Prizes">
       </div>
 
@@ -1627,7 +1540,7 @@ twq('config','o5z2k');
 
         <div class="pc-hdr-judge-item">
           <div class="pc-hdr-judge-photo">
-            <img src="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/CharlieHunter.png?v=1779046741" alt="Charlie Hunter" style="object-position:center 50%;">
+            <img src="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/CharlieHunter.png?v=1779046741" alt="Charlie Hunter" style="object-position:center top;">
             <div class="pc-hdr-judge-photo-tint"></div>
           </div>
           <div class="pc-hdr-judge-info">
@@ -1713,7 +1626,7 @@ twq('config','o5z2k');
     </p>
     <div class="pc-btn-group pc-fade-up pc-fade-up-3">
       <a href="#pc-enter" class="pc-btn pc-btn-primary">Enter The Challenge</a>
-      <a href="https://get.wheelhousebeats.app/yurt_contest" target="_blank" class="pc-btn pc-btn-secondary">Download the App</a>
+      <a href="https://get.wheelhousebeats.app/yurt1" target="_blank" class="pc-btn pc-btn-secondary">Download the App</a>
     </div>
 
     <!-- Countdown -->
@@ -2012,14 +1925,14 @@ twq('config','o5z2k');
     <p>Wheelhouse Beats helps you develop groove using real drummer recordings &mdash; not a metronome.</p>
     <p style="font-size:0.95rem;color:rgba(255,255,255,0.9);font-weight:600;margin-top:-0.5rem;margin-bottom:1.5rem;letter-spacing:0.03em;">Try it free for 10 days &mdash; No credit card required</p>
     <div class="pc-app-buttons">
-      <a href="https://apps.apple.com/app/apple-store/id1539474889?pt=118357353&ct=yurt_contest" target="_blank" class="pc-app-btn">
+      <a href="https://apps.apple.com/us/app/wheelhouse-beats/id1539474889?utm_source=pocket_challenge_site&utm_medium=website&utm_campaign=pocket_challenge" target="_blank" class="pc-app-btn">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.19 1.3-2.17 3.88.02 3.04 2.62 4.07 2.66 4.09l-.04.1m-4.23-16c.73-.87 1.22-2.08 1.09-3.29-1.05.04-2.32.7-3.07 1.57-.67.78-1.26 2.02-1.1 3.2 1.17.09 2.36-.57 3.08-1.48"/></svg>
         <span class="pc-app-btn-label">
           <span class="pc-app-btn-sub">Download on the</span>
           <span class="pc-app-btn-name">App Store</span>
         </span>
       </a>
-      <a href="https://play.google.com/store/apps/details?id=co.avdeck.wheelhouse&utm_campaign=yurt_contest" target="_blank" class="pc-app-btn">
+      <a href="https://play.google.com/store/apps/details?id=co.avdeck.wheelhouse&utm_source=pocket_challenge_site&utm_medium=website&utm_campaign=pocket_challenge" target="_blank" class="pc-app-btn">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.2.96.08l11.8-6.81-2.52-2.52-10.24 9.25zm-1.5-20.5a1.3 1.3 0 0 0-.18.65v19.18c0 .24.06.46.18.65l.07.07 10.74-10.74v-.24L1.75 3.19l-.07.07zm18.3 8.02-2.54-1.47L14.6 12l2.84 2.84 2.54-1.47c.73-.42.73-1.1 0-1.52v-.07zm-17.11 11.1 11.32-6.53-2.52-2.52-8.8 9.05z"/></svg>
         <span class="pc-app-btn-label">
           <span class="pc-app-btn-sub">Get it on</span>
@@ -2058,19 +1971,21 @@ twq('config','o5z2k');
   function getOffset() {
     var nav = document.getElementById('pc-nav');
     var navH = nav ? nav.offsetHeight : 52;
-    return navH + 8;
+    var themeHeader = document.querySelector('.header-wrapper, .site-header, header.shopify-section');
+    var themeH = themeHeader ? themeHeader.offsetHeight : 0;
+    return navH + themeH + 8;
   }
 
-  document.addEventListener('click', function(e) {
-    var link = e.target.closest('a[href^="#"]');
-    if (!link) return;
-    var href = link.getAttribute('href');
-    if (!href || href === '#') return;
-    var target = document.querySelector(href);
-    if (!target) return;
-    e.preventDefault();
-    var top = target.getBoundingClientRect().top + window.pageYOffset - getOffset();
-    window.scrollTo({ top: top, behavior: 'smooth' });
+  document.querySelectorAll('.pc-nav-link, .pc-nav a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var href = this.getAttribute('href');
+      if (!href || href.charAt(0) !== '#') return;
+      var target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - getOffset();
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
   });
 })();
 </script>
