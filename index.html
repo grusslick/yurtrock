@@ -1,3 +1,8 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
 <!-- Google Tag Manager -->
 <script>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -7,6 +12,9 @@
   })(window,document,'script','dataLayer','GTM-TVBNSNM');
 </script>
 <!-- End Google Tag Manager -->
+
+<!-- Klaviyo — TODO: replace YOUR_PUBLIC_KEY with your 6-character Site ID (Klaviyo > Settings > Account > API Keys) -->
+<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Rwn7Qg"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +26,6 @@
 <meta property="og:title" content="Win $10k+ In Prizes - The Pocket Challenge">
 <meta property="og:description" content="Play along to Wheelhouse Beats and show us your groove. Win over $10,000 in prizes including guitars, backpacks, software, and a private lesson with Charlie Hunter.">
 <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/OpenGraph.jpg?v=1779319045">
-<meta name="twitter:card" content="summary_large_image">
 
 <!-- Twitter/X Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -75,18 +82,8 @@ twq('config','o5z2k');
   }
 </style>
 
-<!--
-  IMPORTANT &mdash; SHOPIFY FONT FIX:
-  Paste this line into your theme's layout/theme.liquid <head> section
-  (before the closing </head> tag) for fonts to load reliably:
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
--->
-
 <style>
-  /* Google Fonts @import fallback &mdash; covers cases where the <link> tag above is stripped by Shopify */
+  /* Google Fonts @import fallback &mdash; covers cases where the <link> tag above is stripped */
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap');
 
   /* Global reset - removes Chrome default body margin and all whitespace before content */
@@ -96,7 +93,7 @@ twq('config','o5z2k');
     background: #0A0805 !important;
   }
 
-  /* Offset all native anchor jumps by fixed nav + any Shopify theme header height */
+  /* Offset all native anchor jumps by fixed nav + any theme header height */
   html {
     scroll-padding-top: 60px;
   }
@@ -811,11 +808,6 @@ twq('config','o5z2k');
       padding: 8px 1rem;
       letter-spacing: 0.08em;
     }
-  }
-    opacity: 0.6;
-    border: 2px dashed rgba(245,121,10,0.35);
-    padding: 2rem 3rem;
-    border-radius: 4px;
   }
 
   /* - Nav strip - */
@@ -1538,12 +1530,15 @@ twq('config','o5z2k');
   html, body { margin: 0; padding: 0; }
 </style>
 
-<div class="pc-breakout">
+</head>
+<body>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVBNSNM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<div class="pc-breakout">
 
 <div class="pc-page">
 
@@ -2000,7 +1995,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
 
-      <!-- ViralSweep embed -->
       <!-- ViralSweep Entry Form -->
       <div id="vsscript_226607_233852"></div>
       <script async type="text/javascript" src="https://app.viralsweep.com/vsa-widget-1c182b-226607.js?sid=226607_233852"></script>
@@ -2117,3 +2111,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   setInterval(update, 1000);
 })();
 </script>
+
+</body>
+</html>
