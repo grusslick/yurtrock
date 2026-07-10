@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +16,19 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win $10k+ In Prizes - The Pocket Challenge</title>
+<title>Winners Announced - The Pocket Challenge</title>
 <link rel="icon" type="image/png" href="https://yurtrock.com/cdn/shop/files/ico.png?crop=center&height=32&v=1671746902&width=32">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://contest.yurtrock.com/">
-<meta property="og:title" content="Win $10k+ In Prizes - The Pocket Challenge">
-<meta property="og:description" content="Play along to Wheelhouse Beats and show us your groove. Win over $10,000 in prizes including guitars, backpacks, software, and a private lesson with Charlie Hunter.">
+<meta property="og:title" content="Winners Announced - The Pocket Challenge">
+<meta property="og:description" content="The results are in. Watch the winning Pocket Challenge performances, selected by Brad Wilk, Charlie Hunter, Larry Goldings, and Tim Lefebvre.">
 <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/OpenGraph.jpg?v=1779319045">
 
 <!-- Twitter/X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Win $10k+ In Prizes - The Pocket Challenge">
-<meta name="twitter:description" content="Play along to Wheelhouse Beats and show us your groove. Win over $10,000 in prizes including guitars, backpacks, software, and a private lesson with Charlie Hunter.">
+<meta name="twitter:title" content="Winners Announced - The Pocket Challenge">
+<meta name="twitter:description" content="The results are in. Watch the winning Pocket Challenge performances, selected by Brad Wilk, Charlie Hunter, Larry Goldings, and Tim Lefebvre.">
 <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/OpenGraph.jpg?v=1779319045">
 
 <!-- Meta Pixel Code -->
@@ -1344,6 +1345,106 @@ twq('config','o5z2k');
     margin-bottom: 0.5rem;
   }
 
+  /* =====================
+     WINNERS SECTION
+  ===================== */
+  .pc-winners-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pc-winners-inner .pc-section-title { color: #fff; }
+  .pc-winners-inner .pc-section-title span { color: var(--pc-gold); }
+  .pc-winners-intro {
+    color: rgba(255,255,255,0.65);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 640px;
+    margin: 0 auto 3rem;
+  }
+  .pc-winners-intro strong { color: #fff; }
+
+  .pc-winner-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+    padding: 2rem 1.5rem 2.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .pc-winner-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: rgba(255,255,255,0.15);
+  }
+  .pc-winner-card-1 {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    border-color: rgba(255,186,26,0.35);
+    background: rgba(255,186,26,0.04);
+  }
+  .pc-winner-card-1::before { background: var(--pc-gold); }
+  .pc-winner-card-2::before { background: #C0C0C0; }
+  .pc-winner-card-3::before { background: #B07B3E; }
+
+  .pc-winners-runnerup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .pc-winners-runnerup-grid { grid-template-columns: 1fr; }
+  }
+
+  .pc-winner-medal {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  .pc-winner-place {
+    font-family: var(--bebas);
+    font-size: 1rem;
+    letter-spacing: 0.24em;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+  .pc-winner-card-1 .pc-winner-place { color: var(--pc-gold); }
+  .pc-winner-name {
+    font-family: var(--bebas);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 0.05em;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .pc-winner-card-1 .pc-winner-name {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+  }
+  .pc-winner-instrument {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pc-orange);
+    margin-bottom: 1.5rem;
+  }
+  .pc-winner-video {
+    display: flex;
+    justify-content: center;
+  }
+  .pc-winner-video .instagram-media {
+    margin: 0 auto !important;
+  }
+
+  @media (max-width: 768px) {
+    .pc-winner-card { padding: 1.5rem 0.75rem 1.75rem; }
+  }
+
   /* - App download - */
   .pc-app-band {
     background: var(--pc-orange);
@@ -1542,6 +1643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Sticky Nav -->
   <div class="pc-nav-outer">
     <nav class="pc-nav" id="pc-nav">
+      <a href="#pc-winners" class="pc-nav-link">Winners</a>
       <a href="#pc-how-it-works" class="pc-nav-link">How It Works</a>
       <a href="#pc-prizes" class="pc-nav-link">Prizes</a>
       <a href="#pc-judges" class="pc-nav-link">Judges</a>
@@ -1571,19 +1673,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="pc-hdr-title-pocket">Pocket</div>
         <div class="pc-hdr-title-challenge">Challenge</div>
         <div class="pc-hdr-divider"></div>
-        <div class="pc-hdr-prize-amount">WIN OVER $10,000</div>
-        <div class="pc-hdr-prize-label">In Prizes</div>
+        <div class="pc-hdr-prize-amount">WINNERS ANNOUNCED</div>
+        <div class="pc-hdr-prize-label">Over $10,000 In Prizes Awarded</div>
         <ul class="pc-hdr-prize-list">
           <li>Heritage &amp; Harmony Guitars</li>
           <li>XLN Audio Suite</li>
           <li>MONO Backpacks</li>
           <li>Yurt Rock Ultimate Bundle</li>
           <li>Private Lesson &middot; Charlie Hunter</li>
-          <li>Deadline: July 1, 2026</li>
+          <li>Winners Announced July 8, 2026</li>
         </ul>
         <p class="pc-hdr-hashtag">#pocketchallenge</p>
         <div class="pc-hdr-cta-btns">
-          <a href="#pc-enter" class="pc-hdr-btn pc-hdr-btn-primary">Enter The Challenge</a>
+          <a href="#pc-winners" class="pc-hdr-btn pc-hdr-btn-primary">See The Winners</a>
           <a href="https://get.wheelhousebeats.app/yurt_contest" target="_blank" class="pc-hdr-btn pc-hdr-btn-secondary">Download The App</a>
         </div>
       </div>
@@ -1592,7 +1694,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="pc-hdr-right">
         <!-- CTA banner above prizes -->
         <div class="pc-hdr-cta-banner">
-          DOWNLOAD THE APP FOR FREE AND ENTER TODAY!
+          THE RESULTS ARE IN &mdash; WATCH THE WINNING PERFORMANCES BELOW
         </div>
         <!-- Sponsored By strip -->
         <div class="pc-hdr-sponsor-strip">
@@ -1687,12 +1789,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Footer bar -->
     <div class="pc-hdr-footer">
-      <span class="pc-hdr-footer-left">Submit by July 1, 2026 &middot; Deadline Midnight CT</span>
+      <span class="pc-hdr-footer-left">Contest Closed July 1, 2026 &middot; Winners Announced July 8, 2026</span>
       <span class="pc-hdr-footer-center">#POCKETCHALLENGE</span>
       <span class="pc-hdr-footer-left" style="opacity:0;">&middot;</span>
     </div>
 
   </div><!-- /pc-hdr -->
+
+  <!-- ====================== WINNERS -->
+  <div id="pc-winners" class="pc-submit-bg">
+    <div class="pc-winners-inner">
+      <p class="pc-eyebrow" style="color:var(--pc-gold);">The Results Are In</p>
+      <h2 class="pc-section-title">Meet The <span>Winners</span></h2>
+      <div class="pc-section-rule centered" style="background:var(--pc-gold);"></div>
+
+      <p class="pc-winners-intro">
+        Thank you to everyone who entered The Pocket Challenge. The public selected the finalists,
+        and our judges &mdash; <strong>Brad Wilk, Charlie Hunter, Larry Goldings, and Tim Lefebvre</strong> &mdash;
+        picked the three performances that sat deepest in the pocket.
+      </p>
+
+      <!-- Grand Prize -->
+      <div class="pc-winner-card pc-winner-card-1">
+        <span class="pc-winner-medal">&#127942;</span>
+        <span class="pc-winner-place">Grand Prize</span>
+        <h3 class="pc-winner-name">Jordan Rose</h3>
+        <p class="pc-winner-instrument">Drums</p>
+        <div class="pc-winner-video">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DaOvGEpuBUR/"
+            data-instgrm-version="14"
+            style="background:#FFF; border:0; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.35); margin:0 auto; max-width:540px; min-width:300px; padding:0; width:99.375%;">
+            <a href="https://www.instagram.com/reel/DaOvGEpuBUR/" target="_blank" rel="noopener" style="display:block; padding:24px; text-align:center; color:#F5790A; font-family:'DM Sans',sans-serif; text-decoration:none;">Watch Jordan Rose's winning performance on Instagram</a>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- 2nd & 3rd Place -->
+      <div class="pc-winners-runnerup-grid">
+
+        <div class="pc-winner-card pc-winner-card-2">
+          <span class="pc-winner-medal">&#129352;</span>
+          <span class="pc-winner-place">2nd Place</span>
+          <h3 class="pc-winner-name">Miles Houser</h3>
+          <p class="pc-winner-instrument">Bass, Guitar &amp; Drums</p>
+          <div class="pc-winner-video">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DZ-WB4fRqR-/"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.35); margin:0 auto; max-width:540px; min-width:300px; padding:0; width:99.375%;">
+              <a href="https://www.instagram.com/reel/DZ-WB4fRqR-/" target="_blank" rel="noopener" style="display:block; padding:24px; text-align:center; color:#F5790A; font-family:'DM Sans',sans-serif; text-decoration:none;">Watch Miles Houser's performance on Instagram</a>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="pc-winner-card pc-winner-card-3">
+          <span class="pc-winner-medal">&#129353;</span>
+          <span class="pc-winner-place">3rd Place</span>
+          <h3 class="pc-winner-name">Valere Speranza</h3>
+          <p class="pc-winner-instrument">Guitar</p>
+          <div class="pc-winner-video">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/reel/DaLQ6_VNQAy/"
+              data-instgrm-version="14"
+              style="background:#FFF; border:0; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.35); margin:0 auto; max-width:540px; min-width:300px; padding:0; width:99.375%;">
+              <a href="https://www.instagram.com/reel/DaLQ6_VNQAy/" target="_blank" rel="noopener" style="display:block; padding:24px; text-align:center; color:#F5790A; font-family:'DM Sans',sans-serif; text-decoration:none;">Watch Valere Speranza's performance on Instagram</a>
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- ====================== HERO -->
   <section class="pc-hero">
@@ -1701,35 +1869,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       Play In The<br><span>Pocket.</span><br>Win Big.
     </h1>
     <p class="pc-hero-sub pc-fade-up pc-fade-up-2">
-      Record yourself playing along to the Wheelhouse Beats app and show us your feel, timing, and musicality.
-      <strong>This is NOT about chops &mdash; it's about time and feel.</strong>
+      Musicians recorded themselves playing along to the Wheelhouse Beats app and showed us their feel, timing, and musicality.
+      <strong>This was NOT about chops &mdash; it was about time and feel.</strong>
     </p>
     <div class="pc-btn-group pc-fade-up pc-fade-up-3">
-      <a href="#pc-enter" class="pc-btn pc-btn-primary">Enter The Challenge</a>
+      <a href="#pc-winners" class="pc-btn pc-btn-primary">See The Winners</a>
       <a href="https://get.wheelhousebeats.app/yurt_contest" target="_blank" class="pc-btn pc-btn-secondary">Download the App</a>
     </div>
 
-    <!-- Countdown -->
     <div class="pc-fade-up pc-fade-up-4">
-      <div class="pc-countdown-wrap">
-        <div class="pc-countdown-block">
-          <span class="pc-countdown-num" id="pc-days">--</span>
-          <span class="pc-countdown-label">Days</span>
-        </div>
-        <div class="pc-countdown-block">
-          <span class="pc-countdown-num" id="pc-hours">--</span>
-          <span class="pc-countdown-label">Hours</span>
-        </div>
-        <div class="pc-countdown-block">
-          <span class="pc-countdown-num" id="pc-mins">--</span>
-          <span class="pc-countdown-label">Mins</span>
-        </div>
-        <div class="pc-countdown-block">
-          <span class="pc-countdown-num" id="pc-secs">--</span>
-          <span class="pc-countdown-label">Secs</span>
-        </div>
-      </div>
-      <p class="pc-deadline-label">Submission Deadline: July 1, 2026 at Midnight CT</p>
+      <p class="pc-deadline-label">Submissions closed July 1, 2026 &middot; Winners announced July 8, 2026</p>
       <!-- Wheelhouse Beats app screenshot -->
       <div style="margin-top:2rem;">
         <img src="https://cdn.shopify.com/s/files/1/0510/4363/1276/files/Wheelhouse1_2d574494-9f6a-4415-a171-866ed98e2683.png?v=1779135375"
@@ -1750,7 +1899,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="pc-how-it-works">
     <div class="pc-section">
       <p class="pc-eyebrow">The Process</p>
-      <h2 class="pc-section-title">How It <span>Works</span></h2>
+      <h2 class="pc-section-title">How It <span>Worked</span></h2>
       <div class="pc-section-rule"></div>
       <div class="pc-steps">
         <div class="pc-step">
@@ -1775,7 +1924,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="pc-step-num">4</span>
           <div class="pc-step-icon" style="font-size:1.75rem;">&#128640;</div>
           <h3>Submit &amp; Share</h3>
-          <p>Post with <strong>#pocketchallenge</strong> on Instagram or TikTok, then submit your video below.</p>
+          <p>Post with <strong>#pocketchallenge</strong> on Instagram or TikTok, then submit your video.</p>
         </div>
       </div>
     </div>
@@ -1785,7 +1934,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div id="pc-prizes" class="pc-prizes-bg">
     <div class="pc-prizes-inner">
       <p class="pc-eyebrow">Total Prize Value: $10,000+</p>
-      <h2 class="pc-section-title">Win Big. <span>Get Heard.</span></h2>
+      <h2 class="pc-section-title">The <span>Prizes</span></h2>
       <div class="pc-section-rule"></div>
 
       <div class="pc-prize-grid">
@@ -1851,7 +2000,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ====================== JUDGING CRITERIA -->
   <div class="pc-section">
-    <p class="pc-eyebrow pc-text-center">What the Judges Are Listening For</p>
+    <p class="pc-eyebrow pc-text-center">What the Judges Were Listening For</p>
     <h2 class="pc-section-title pc-text-center">Judging <span>Criteria</span></h2>
     <div class="pc-section-rule centered"></div>
     <div class="pc-criteria-grid">
@@ -1872,7 +2021,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <p class="pc-text-center pc-mt-md" style="font-size:0.9rem;color:var(--pc-muted);max-width:580px;margin-left:auto;margin-right:auto;">
-      The public votes to select <strong>10 finalists</strong>. Our panel of world-class musicians then selects the winners from those finalists.
+      The public voted to select <strong>10 finalists</strong>. Our panel of world-class musicians then selected the winners from those finalists.
     </p>
   </div>
 
@@ -1937,20 +2086,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
       </div>
-    </div>
-  </div>
-
-  <!-- ====================== ENTER / VIRALSWEEP -->
-  <div id="pc-enter" class="pc-submit-bg">
-    <div class="pc-submit-inner">
-      <p class="pc-eyebrow" style="color:var(--pc-gold);">The Pocket Challenge</p>
-      <h2 class="pc-section-title">Submissions Are <span>Closed</span></h2>
-      <div class="pc-section-rule centered" style="background:var(--pc-gold);"></div>
-
-      <p style="font-size:1.05rem;line-height:1.75;color:rgba(255,255,255,0.75);margin-bottom:0;">
-        Thank you to everyone who entered. Submissions closed on <strong style="color:#fff;">July 1, 2026</strong>.
-        <strong style="color:var(--pc-gold);">Winners will be announced July 8, 2026.</strong>
-      </p>
     </div>
   </div>
 
@@ -2036,33 +2171,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-<!-- ====================== COUNTDOWN SCRIPT -->
-<script>
-(function() {
-  var deadline = new Date('2026-07-01T05:00:00Z'); // July 1 Midnight CT (UTC-5)
-  function update() {
-    var now = new Date();
-    var diff = deadline - now;
-    if (diff <= 0) {
-      document.getElementById('pc-days').textContent  = '00';
-      document.getElementById('pc-hours').textContent = '00';
-      document.getElementById('pc-mins').textContent  = '00';
-      document.getElementById('pc-secs').textContent  = '00';
-      return;
-    }
-    var d = Math.floor(diff / 86400000);
-    var h = Math.floor((diff % 86400000) / 3600000);
-    var m = Math.floor((diff % 3600000)  / 60000);
-    var s = Math.floor((diff % 60000)    / 1000);
-    document.getElementById('pc-days').textContent  = String(d).padStart(2,'0');
-    document.getElementById('pc-hours').textContent = String(h).padStart(2,'0');
-    document.getElementById('pc-mins').textContent  = String(m).padStart(2,'0');
-    document.getElementById('pc-secs').textContent  = String(s).padStart(2,'0');
-  }
-  update();
-  setInterval(update, 1000);
-})();
-</script>
-  
+<!-- ====================== INSTAGRAM EMBED -->
+<script async src="https://www.instagram.com/embed.js"></script>
+
 </body>
 </html>
